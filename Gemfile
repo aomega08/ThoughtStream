@@ -11,6 +11,7 @@ gem 'puma', '~> 3.11'
 gem 'sass-rails'
 gem 'uglifier'
 gem 'jbuilder'
+gem 'slim-rails'
 gem 'mini_racer'
 
 gem 'bcrypt'
