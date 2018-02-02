@@ -1,0 +1,16 @@
+AllCops:
+  Exclude:
+    - bin/**/*
+    - db/schema.rb
+    - Gemfile
+    - node_modules/**/*
+
+Rails:
+  Enabled: true
+
+Metrics/LineLength:
+  Max: 120
+
+Style/Documentation:
+  Exclude:
+    - db/**/*

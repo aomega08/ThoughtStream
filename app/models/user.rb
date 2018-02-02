@@ -1,3 +1,6 @@
+# frozen_string_literal: true
+
+# A generic user. Some users can publish posts, others can only comment.
 class User < ApplicationRecord
   has_secure_password
 
