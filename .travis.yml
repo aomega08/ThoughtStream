@@ -1,0 +1,18 @@
+language: ruby
+rvm: 2.5.0
+
+services:
+  - postgresql
+
+env:
+  - RAILS_ENV=test
+
+before_script:
+  - ./bin/rails db:create db:migrate
+
+script:
+  - bundle exec rspec
+
+addons:
+  hosts:
+    - postgres
