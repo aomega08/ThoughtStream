@@ -7,7 +7,6 @@ gem 'rails', '~> 5.2.0.rc1'
 gem 'pg', '~> 1.0'
 gem 'puma', '~> 3.11'
 
-# Use SCSS for stylesheets
 gem 'sass-rails'
 gem 'uglifier'
 gem 'jbuilder'
