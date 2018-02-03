@@ -3,6 +3,8 @@
 module Admin
   # Handles sign in actions for admins/editors/authors/contributors
   class SessionsController < AdminController
+    skip_before_action :ensure_admin, only: %i[new create]
+
     def new
     end
 

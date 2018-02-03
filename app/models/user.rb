@@ -8,4 +8,8 @@ class User < ApplicationRecord
 
   validates :email, :name, :role, presence: true
   validates :email, format: { with: /\A.+@.+\z/ }
+
+  def can_use_dashboard?
+    role.in?(%w[contributor author editor admin])
+  end
 end

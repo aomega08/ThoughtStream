@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# Global application root controller
 class ApplicationController < ActionController::Base
   helper_method :current_user
 
