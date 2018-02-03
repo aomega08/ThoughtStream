@@ -18,7 +18,7 @@ module Admin
     end
 
     def destroy
-      render :new
+      sign_out
     end
   end
 end

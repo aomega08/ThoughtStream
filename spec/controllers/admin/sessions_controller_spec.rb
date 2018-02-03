@@ -24,5 +24,22 @@ RSpec.describe Admin::SessionsController do
         expect(response).to redirect_to admin_root_path
       end
     end
+
+    context 'when authentication fails' do
+      it 'does not set a cookie' do
+        post :create
+        expect(response.cookies['user_id']).to be_nil
+      end
+    end
+  end
+
+  describe '#destroy' do
+    it 'signs out the user' do
+      post :create, params: { email: admin.email, password: 'secret' }
+      expect(controller.current_user).to_not be_nil
+
+      delete :destroy
+      expect(controller.current_user).to be_nil
+    end
   end
 end
