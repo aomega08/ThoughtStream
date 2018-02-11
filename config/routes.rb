@@ -1,6 +1,13 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
+  ######                                           ######
+  ## Unacceptable routes for the first few iterations! ##
+  ######                                           ######
+
+  root to: 'posts#index'
+  resources :posts, only: [:index, :show]
+
   namespace :admin do
     root to: 'dashboard#index'
 
