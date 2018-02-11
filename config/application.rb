@@ -26,5 +26,9 @@ module ThoughtStream
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.2
+
+    Rails.application.routes.default_url_options = {
+      host: Settings.host
+    }
   end
 end
