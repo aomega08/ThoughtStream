@@ -14,4 +14,14 @@ class Post < ApplicationRecord
   def content
     latest_revision.raw_content
   end
+
+  def meta_title
+  end
+
+  def meta_description
+  end
+
+  def published_at
+    Time.now
+  end
 end
