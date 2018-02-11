@@ -16,6 +16,8 @@ gem 'slim-rails'
 gem 'mini_racer'
 
 # Other
+gem 'config'
+gem 'meta-tags'
 gem 'bcrypt'
 gem 'friendly_id'
 gem 'redcarpet'
