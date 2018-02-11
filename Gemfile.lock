@@ -63,6 +63,8 @@ GEM
     faker (1.8.7)
       i18n (>= 0.7)
     ffi (1.9.21)
+    friendly_id (5.2.3)
+      activerecord (>= 4.0.0)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
     i18n (0.9.4)
@@ -128,6 +130,7 @@ GEM
     rb-fsevent (0.10.2)
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
+    redcarpet (3.4.0)
     rspec-core (3.7.1)
       rspec-support (~> 3.7.0)
     rspec-expectations (3.7.0)
@@ -209,12 +212,14 @@ DEPENDENCIES
   byebug
   factory_bot_rails
   faker
+  friendly_id
   jbuilder
   listen (< 3.2)
   mini_racer
   pg (~> 1.0)
   puma (~> 3.11)
   rails (~> 5.2.0.rc1)
+  redcarpet
   rspec-rails
   sass-rails
   simplecov
